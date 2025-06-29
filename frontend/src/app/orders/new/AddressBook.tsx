@@ -224,7 +224,7 @@ export default function AddressBook({ open, onClose, onSelectAddress, onSaveAddr
             </Typography>
             
             <Grid container spacing={2}>
-              <Grid size={{ xs: 12, md: 6 }}>
+              <Grid item xs={12} md={6}>
                 <TextField
                   fullWidth
                   label="地址簿名称"
@@ -234,7 +234,7 @@ export default function AddressBook({ open, onClose, onSelectAddress, onSaveAddr
                   required
                 />
               </Grid>
-          <Grid size={{ xs: 12, md: 6 }}>
+          <Grid item xs={12} md={6}>
                 <TextField
                   fullWidth
                   label="收件公司名称"
@@ -243,7 +243,7 @@ export default function AddressBook({ open, onClose, onSelectAddress, onSaveAddr
                   placeholder="请输入收件公司名称"
                 />
               </Grid>
-          <Grid size={{ xs: 12, md: 6 }}>
+          <Grid item xs={12} md={6}>
                 <TextField
                   fullWidth
                   label="收件联系人"
@@ -253,7 +253,7 @@ export default function AddressBook({ open, onClose, onSelectAddress, onSaveAddr
                   required
                 />
               </Grid>
-          <Grid size={{ xs: 12, md: 6 }}>
+          <Grid item xs={12} md={6}>
                 <TextField
                   fullWidth
                   label="收件联系电话"
@@ -263,7 +263,7 @@ export default function AddressBook({ open, onClose, onSelectAddress, onSaveAddr
                   required
                 />
               </Grid>
-               <Grid size={{ xs: 12 }}>
+               <Grid item xs={12}>
                 <TextField
                   fullWidth
                   label="收件地址"
@@ -363,7 +363,7 @@ export default function AddressBook({ open, onClose, onSelectAddress, onSaveAddr
                   
                   <Grid container spacing={1}>
                     {address.company && (
-                      <Grid item size={{ xs: 12 }}>
+                      <Grid item xs={12}>
                         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                           <BusinessIcon sx={{ fontSize: 16, color: '#64748b' }} />
                           <Typography variant="body2" sx={{ color: '#64748b' }}>
@@ -372,7 +372,7 @@ export default function AddressBook({ open, onClose, onSelectAddress, onSaveAddr
                         </Box>
                       </Grid>
                     )}
-                    <Grid item size={{ xs: 12, md: 6 }}>
+                    <Grid item xs={12} md={6}>
                       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                         <PersonIcon sx={{ fontSize: 16, color: '#64748b' }} />
                         <Typography variant="body2" sx={{ color: '#64748b' }}>
@@ -380,7 +380,7 @@ export default function AddressBook({ open, onClose, onSelectAddress, onSaveAddr
                         </Typography>
                       </Box>
                     </Grid>
-                    <Grid item size={{ xs: 12, md: 6 }}>
+                    <Grid item xs={12} md={6}>
                       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                         <PhoneIcon sx={{ fontSize: 16, color: '#64748b' }} />
                         <Typography variant="body2" sx={{ color: '#64748b' }}>
@@ -388,7 +388,7 @@ export default function AddressBook({ open, onClose, onSelectAddress, onSaveAddr
                         </Typography>
                       </Box>
                     </Grid>
-                    <Grid item size={{ xs: 12 }}>
+                    <Grid item xs={12}>
                       <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 1 }}>
                         <LocationIcon sx={{ fontSize: 16, color: '#64748b', mt: 0.2 }} />
                         <Typography variant="body2" sx={{ color: '#64748b', lineHeight: 1.4 }}>

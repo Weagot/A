@@ -54,7 +54,7 @@ export default function Home() {
 
       <Grid container spacing={4}>
         {modules.map((module) => (
-          <Grid item size={{ xs: 12, sm: 6, md: 3 }} key={module.title}>
+          <Grid item xs={12} sm={6} md={3} key={module.title}>
             <Link href={module.href} style={{ textDecoration: 'none' }}>
               <Card 
                 sx={{ 
