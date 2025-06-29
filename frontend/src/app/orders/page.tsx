@@ -499,7 +499,7 @@ export default function OrdersPage() {
 
       {/* 统计卡片 */}
       <Grid container spacing={3} sx={{ mb: 3 }}>
-        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+        <Grid item xs={12} sm={6} md={3}>
           <Card sx={{ 
             height: '100%',
             background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
@@ -536,7 +536,7 @@ export default function OrdersPage() {
             </CardContent>
           </Card>
         </Grid>
-          <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+          <Grid item xs={12} sm={6} md={3}>
           <Card sx={{ 
             height: '100%',
             background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
@@ -573,7 +573,7 @@ export default function OrdersPage() {
             </CardContent>
           </Card>
         </Grid>
-          <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+          <Grid item xs={12} sm={6} md={3}>
           <Card sx={{ 
             height: '100%',
             background: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
@@ -610,7 +610,7 @@ export default function OrdersPage() {
             </CardContent>
           </Card>
         </Grid>
-          <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+          <Grid item xs={12} sm={6} md={3}>
           <Card sx={{ 
             height: '100%',
             background: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
@@ -1274,7 +1274,7 @@ export default function OrdersPage() {
           {selectedOrder && (
             <Box sx={{ mt: 2 }}>
               <Grid container spacing={3}>
-              <Grid size={{ xs: 12, md: 6 }}>
+              <Grid item xs={12} md={6}>
                   <Typography variant="subtitle2" sx={{ color: '#374151', mb: 1 }}>基本信息</Typography>
                   <Box sx={{ p: 2, backgroundColor: '#f8fafc', borderRadius: 1, mb: 2 }}>
                     <Typography variant="body2" sx={{ mb: 1 }}>
@@ -1294,7 +1294,7 @@ export default function OrdersPage() {
                     </Typography>
                   </Box>
                 </Grid>
-          <Grid size={{ xs: 12, md: 6 }}>
+          <Grid item xs={12} md={6}>
                   <Typography variant="subtitle2" sx={{ color: '#374151', mb: 1 }}>海运信息</Typography>
                   <Box sx={{ p: 2, backgroundColor: '#f8fafc', borderRadius: 1, mb: 2 }}>
                     <Typography variant="body2" sx={{ mb: 1 }}>
@@ -1317,7 +1317,7 @@ export default function OrdersPage() {
                     </Typography>
                   </Box>
                 </Grid>
-          <Grid size={{ xs: 12 }}>
+          <Grid item xs={12}>
                   <Typography variant="subtitle2" sx={{ color: '#374151', mb: 1 }}>派送信息</Typography>
                   <Box sx={{ p: 2, backgroundColor: '#f8fafc', borderRadius: 1, mb: 2 }}>
                     <Typography variant="body2" sx={{ mb: 1 }}>
@@ -1334,7 +1334,7 @@ export default function OrdersPage() {
                     </Typography>
                   </Box>
                 </Grid>
-                <Grid size={{ xs: 12 }}>
+                <Grid item xs={12}>
                   <Typography variant="subtitle2" sx={{ color: '#374151', mb: 1 }}>产品信息</Typography>
                   <TableContainer component={Paper} sx={{ mb: 2 }}>
                     <Table size="small">
@@ -1366,7 +1366,7 @@ export default function OrdersPage() {
                   </TableContainer>
                 </Grid>
                 {selectedOrder.reviewInfo && (
-                  <Grid size={{ xs: 12 }}>
+                  <Grid item xs={12}>
                     <Typography variant="subtitle2" sx={{ color: '#374151', mb: 1 }}>审查信息</Typography>
                     <Box sx={{ p: 2, backgroundColor: '#f8fafc', borderRadius: 1 }}>
                       <Typography variant="body2" sx={{ mb: 1 }}>

@@ -313,7 +313,7 @@ export default function NewOrderPage() {
         <Box sx={{ display: 'flex', justifyContent: 'center', px: 2 }}>
           <Grid container spacing={4} sx={{ maxWidth: 1200 }}>
             {/* 装箱单上传区域 */}
-            <Grid item size={{ xs: 12, md: 6 }}>
+            <Grid item xs={12} md={6}>
               <Card sx={{ height: '100%' }}>
                 <CardContent sx={{ p: 4 }}>
                   <Typography variant="h5" gutterBottom sx={{ textAlign: 'center', mb: 3, fontWeight: 'bold' }}>
@@ -369,10 +369,10 @@ export default function NewOrderPage() {
                   )}
                 </CardContent>
               </Card>
-            </Grid2>
+            </Grid>
 
             {/* 提单上传区域 */}
-            <Grid size={{ xs: 12, md: 6 }}>
+            <Grid item xs={12} md={6}>
               <Card sx={{ height: '100%' }}>
                 <CardContent sx={{ p: 4 }}>
                   <Typography variant="h5" gutterBottom sx={{ textAlign: 'center', mb: 3, fontWeight: 'bold' }}>
@@ -445,14 +445,14 @@ export default function NewOrderPage() {
       <TabPanel value={tabValue} index={1}>
         <Grid container spacing={3}>
           {/* 客户信息 */}
-          <Grid size={{ xs: 12 }}>
+          <Grid item xs={12}>
             <Card>
               <CardContent>
                 <Typography variant="h6" gutterBottom>
                   客户信息
                 </Typography>
                 <Grid container spacing={2}>
-                  <Grid size={{ xs: 12, md: 4 }}>
+                  <Grid item xs={12} md={4}>
                     <TextField
                       fullWidth
                       label="客户姓名"
@@ -461,7 +461,7 @@ export default function NewOrderPage() {
                       required
                     />
                   </Grid>
-                  <Grid size={{ xs: 12, md: 4 }}>
+                  <Grid item xs={12} md={4}>
                     <TextField
                       fullWidth
                       label="联系电话"
@@ -469,7 +469,7 @@ export default function NewOrderPage() {
                       onChange={(e) => handleFormChange('customerPhone', e.target.value)}
                     />
                   </Grid>
-                  <Grid size={{ xs: 12, md: 4 }}>
+                  <Grid item xs={12} md={4}>
                     <TextField
                       fullWidth
                       label="邮箱地址"
@@ -487,7 +487,7 @@ export default function NewOrderPage() {
                   海运信息
                 </Typography>
                 <Grid container spacing={2}>
-                  <Grid size={{ xs: 12, md: 3 }}>
+                  <Grid item xs={12} md={3}>
                     <TextField
                       fullWidth
                       label="柜号"
@@ -496,7 +496,7 @@ export default function NewOrderPage() {
                       required
                     />
                   </Grid>
-                  <Grid size={{ xs: 12, md: 3 }}>
+                  <Grid item xs={12} md={3}>
                     <TextField
                       fullWidth
                       label="目的港"
@@ -505,7 +505,7 @@ export default function NewOrderPage() {
                       required
                     />
                   </Grid>
-                  <Grid size={{ xs: 12, md: 3 }}>
+                  <Grid item xs={12} md={3}>
                     <TextField
                       fullWidth
                       label="预计离港时间 (ETD)"
@@ -516,7 +516,7 @@ export default function NewOrderPage() {
                       required
                     />
                   </Grid>
-                  <Grid size={{ xs: 12, md: 3 }}>
+                  <Grid item xs={12} md={3}>
                     <TextField
                       fullWidth
                       label="预计到港时间 (ETA)"
@@ -535,7 +535,7 @@ export default function NewOrderPage() {
                   派送信息
                 </Typography>
                 <Grid container spacing={2}>
-                  <Grid size={{ xs: 12, md: 6 }}>
+                  <Grid item xs={12} md={6}>
                     <TextField
                       fullWidth
                       label="收件地址"
@@ -547,7 +547,7 @@ export default function NewOrderPage() {
                       required
                     />
                   </Grid>
-                  <Grid size={{ xs: 12, md: 6 }}>
+                  <Grid item xs={12} md={6}>
                     <TextField
                       fullWidth
                       label="收件公司名称"
@@ -556,7 +556,7 @@ export default function NewOrderPage() {
                       placeholder="请输入收件公司名称"
                     />
                   </Grid>
-                  <Grid size={{ xs: 12, md: 4 }}>
+                  <Grid item xs={12} md={4}>
                     <TextField
                       fullWidth
                       label="收件联系人"
@@ -566,7 +566,7 @@ export default function NewOrderPage() {
                       required
                     />
                   </Grid>
-                  <Grid size={{ xs: 12, md: 4 }}>
+                  <Grid item xs={12} md={4}>
                     <TextField
                       fullWidth
                       label="收件联系电话"
@@ -576,7 +576,7 @@ export default function NewOrderPage() {
                       required
                     />
                   </Grid>
-                  <Grid size={{ xs: 12, md: 4 }}>
+                  <Grid item xs={12} md={4}>
                     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
                       <Button
                         variant="outlined"
@@ -605,7 +605,7 @@ export default function NewOrderPage() {
                       </Button>
                     </Box>
                   </Grid>
-                  <Grid size={{ xs: 12 }}>
+                  <Grid item xs={12}>
                     <TextField
                       fullWidth
                       label="特殊要求"
@@ -622,7 +622,7 @@ export default function NewOrderPage() {
           </Grid>
 
           {/* 产品信息 */}
-          <Grid size={{ xs: 12 }}>
+          <Grid item xs={12}>
             <Card>
               <CardContent>
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>

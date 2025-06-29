@@ -369,7 +369,7 @@ export default function DeliveryPage() {
       <Card sx={{ mb: 3 }}>
         <CardContent>
           <Grid container spacing={2} alignItems="center">
-            <Grid xs={12} md={3}>
+            <Grid item xs={12} md={3}>
               <TextField
                 fullWidth
                 placeholder="搜索任务编号、客户或订单号"
@@ -380,7 +380,7 @@ export default function DeliveryPage() {
                 }}
               />
             </Grid>
-              <Grid size={{ xs: 12, md: 2 }}>
+              <Grid item xs={12} md={2}>
               <FormControl fullWidth>
                 <InputLabel>状态筛选</InputLabel>
                 <Select
@@ -397,7 +397,7 @@ export default function DeliveryPage() {
                 </Select>
               </FormControl>
             </Grid>
-              <Grid size={{ xs: 12, md: 2 }}>
+              <Grid item xs={12} md={2}>
               <FormControl fullWidth>
                 <InputLabel>物流公司</InputLabel>
                 <Select
@@ -414,7 +414,7 @@ export default function DeliveryPage() {
                 </Select>
               </FormControl>
             </Grid>
-              <Grid xs={12} md={3}>
+              <Grid item xs={12} md={3}>
               <Button
                 variant="contained"
                 startIcon={<AddIcon />}
@@ -577,7 +577,7 @@ export default function DeliveryPage() {
         </DialogTitle>
         <DialogContent>
           <Grid container spacing={2} sx={{ mt: 1 }}>
-            <Grid size={{ xs: 12, md: 6 }}>
+            <Grid item xs={12} md={6}>
               <TextField
                 fullWidth
                 label="关联订单ID"
@@ -586,7 +586,7 @@ export default function DeliveryPage() {
                 disabled={dialogMode === 'view'}
               />
             </Grid>
-            <Grid xs={12} md={2}>
+              <Grid item xs={12} md={2}>
               <TextField
                 fullWidth
                 label="订单号"
@@ -595,7 +595,7 @@ export default function DeliveryPage() {
                 disabled={dialogMode === 'view'}
               />
             </Grid>
-             <Grid size={{ xs: 12, md: 6 }}>
+             <Grid item xs={12} md={6}>
               <TextField
                 fullWidth
                 label="客户姓名"
@@ -604,7 +604,7 @@ export default function DeliveryPage() {
                 disabled={dialogMode === 'view'}
               />
             </Grid>
-            <Grid xs={12} md={6}>
+            <Grid item xs={12} md={6}>
               <TextField
                 fullWidth
                 label="客户电话"
@@ -613,7 +613,7 @@ export default function DeliveryPage() {
                 disabled={dialogMode === 'view'}
               />
             </Grid>
-             <Grid size={{ xs: 12 }}>
+             <Grid item xs={12}>
               <TextField
                 fullWidth
                 label="配送地址"
@@ -624,7 +624,7 @@ export default function DeliveryPage() {
                 rows={2}
               />
             </Grid>
-             <Grid size={{ xs: 12, md: 6 }}>
+             <Grid item xs={12} md={6}>
               <FormControl fullWidth disabled={dialogMode === 'view'}>
                 <InputLabel>物流公司</InputLabel>
                 <Select
@@ -645,7 +645,7 @@ export default function DeliveryPage() {
                 </Select>
               </FormControl>
             </Grid>
-             <Grid xs={12} md={6}>
+             <Grid item xs={12} md={6}>
               <TextField
                 fullWidth
                 label="预计配送日期"
@@ -656,7 +656,7 @@ export default function DeliveryPage() {
                 InputLabelProps={{ shrink: true }}
               />
             </Grid>
-             <Grid xs={12} md={6}>
+             <Grid item xs={12} md={6}>
               <FormControl fullWidth disabled={dialogMode === 'view'}>
                 <InputLabel>预计时间段</InputLabel>
                 <Select
@@ -670,7 +670,7 @@ export default function DeliveryPage() {
                 </Select>
               </FormControl>
             </Grid>
-            <Grid size={{ xs: 12 }}>
+            <Grid item xs={12}>
               <TextField
                 fullWidth
                 label="特殊要求"
@@ -684,7 +684,7 @@ export default function DeliveryPage() {
             </Grid>
             {dialogMode === 'view' && selectedTask && (
               <>
-                <Grid size={{ xs: 12, md: 6 }}>
+                <Grid item xs={12} md={6}>
                   <TextField
                     fullWidth
                     label="任务编号"
@@ -693,7 +693,7 @@ export default function DeliveryPage() {
                   />
                 </Grid>
 
-                <Grid size={{ xs: 12, md: 6 }}>
+                <Grid item xs={12} md={6}>
                   <TextField
                     fullWidth
                     label="当前状态"
@@ -701,7 +701,7 @@ export default function DeliveryPage() {
                     disabled
                   />
                 </Grid>
-                 <Grid size={{ xs: 12, md: 6 }}>
+                 <Grid item xs={12} md={6}>
                   <TextField
                     fullWidth
                     label="创建时间"
@@ -709,7 +709,7 @@ export default function DeliveryPage() {
                     disabled
                   />
                 </Grid>
-                 <Grid size={{ xs: 12, md: 6 }}>
+                 <Grid item xs={12} md={6}>
                   <TextField
                     fullWidth
                     label="更新时间"
